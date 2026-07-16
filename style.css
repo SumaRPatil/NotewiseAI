@@ -1,0 +1,308 @@
+
+#main-header,
+#main-footer {
+    display: none;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.login-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.login-logo h2 {
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9e9ed;
+    color: #222;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+nav {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    background-color: #c9f0ff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logout-btn:hover {
+    background-color: #c62828;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: #eafffd;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.red {
+    color: red;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.logo img {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    background: white;
+}
+
+
+.home-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.home-page h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.home-page p {
+    margin-top: 1rem;
+    color: #555;
+}
+
+#home-img {
+    height: 450px;
+    width: 450px;
+    margin-top: -9rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #0d47a1;
+    color: white;
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid #0d47a1;
+    color: #0d47a1;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1rem;
+}
+
+section#login {
+    max-width: 100%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+footer span {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.user-icon {
+    height: 28px;
+    width: 28px;
+    fill: #2f2963;
+}
+
+#user-name {
+    font-weight: bold;
+    color: #ef946c;
+    font-size: 1.1rem;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #c62828;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #c62828;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c62828;
+    color: white;
+}
